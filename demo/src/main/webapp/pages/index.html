@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search city" />
+    </header>
+    <main>
+      <section class="location">
+        <div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Coimbatore, TN</div>
+
+        <div class="date"><u>Saturday 29 January 2000</u></div>
+      </section>
+      <div class="current">
+        <div class="temp"><p id="demo">35<span>&#8451</span></p></div>
+        <script>
+          document.getElementById("demo").addEventListener("click", myFunction);
+          function myFunction() {
+          document.getElementById("demo").innerHTML = "95&#8457";}
+        </script>
+        <div class="weather">Sunny</div>
+        <div class="hi-low">30&#8451 / 38&#8451</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
